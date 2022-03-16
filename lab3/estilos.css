@@ -1,0 +1,77 @@
+table, th, td {
+    border:1px solid black;
+}
+*{background: darkgrey;}
+
+h1{
+    color: midnightblue;
+}
+h3{
+    color: darkcyan;
+}
+p{
+    font-weight: bold;
+}
+table{
+    background-color: antiquewhite;
+}
+footer{
+    background-color: cornsilk;
+}
+table:hover{
+    background-color: darkblue;
+}
+h3::first-letter{
+    font-size: 2em;
+}
+*{font-family: 'Lato', sans-serif;}
+
+[target=_blank]{
+    color: brown;
+}
+.frase{
+    color: yellow;
+}
+#pois{
+    font-family: "Lucinda Grande", "Lucinda Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: aquamarine;
+}
+#ye{
+    background-color: antiquewhite;
+}
+#ya{
+    background-color: burlywood;
+}
+a:link{
+    color: crimson;
+}
+a:hover{
+    color: deeppink;
+}
+a:visited{
+    color: green;
+}
+a:visited:hover{
+    color: crimson;
+}
+center::first-letter{
+    font-size: 2em;
+}
+[class$="test"]{
+    background: yellow;
+}
+[title="foto"]{
+    border: 5px solid yellow;
+}
+#primeira::first-letter{
+    font-size: 2em;
+    color: deeppink;
+}
+#primeira::first-line{
+    color: blueviolet;
+}
+#segunda::before{
+    content: "Quando se passa o rato pela palavra, esta fica cor-de-rosa. Quando este foi visitado fica a verde.";
+    background-color: yellow;
+    color: red;
+}

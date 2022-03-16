@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Torres Vedras</title>
+        <meta name="author" content="João Bernardino">
+        <meta name="number" content="a22003183">
+        <meta name="description" content="Website sobre Torres Vedras">
+        <link rel="shortcut icon" type="image/x-icon" href="images/Theatre-Masks-256.ico"/>
+        <link rel="stylesheet" href="estilos.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Torres Vedras</h1>
+            <figure>
+                <img src="images/TVD.png" title="foto"><br>
+                <figcaption>Fig.1 - Torres Vedras</figcaption>
+            </figure>
+
+        </header>
+        <nav>
+            <a href="index.html" target="_blank" id="segunda">Introdução |</a>
+            <a href="local.html" target="_blank"><i class='fas fa-location-arrow'></i> Localização |</a>
+            <a href="multimedia.html"><i class='fas fa-camera'></i> Multimédia |</a>
+            <a href="info.html"><i class='fas fa-info-circle'></i> Informações |</a>
+            <a href="../index.html" target="_blank"><i class='fas fa-house-user'></i>Home |</a>
+            <a><i class='fas fa-question-circle'></i> Quizz |</a>
+            <a href="html5-css.html" target="_blank">HTML5_CSS</a>
+        </nav>
+
+        <h3>Quizz</h3>
+        <p class="test">Vamos testar os teus conhecimentos torreenses!</p>
+
+        <main>
+            <fieldset>
+                <legend>Quizz sobre Torres Vedras</legend>
+                <section>
+                <fieldset id="ye">
+                    <legend>Informações sobre o curioso</legend>
+                    <label for="fname">Nome :</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="fapelido">Apelido :</label>
+                    <input type="text" id="fapelido" name="fapelido"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                </fieldset>
+                <fieldset id="ya">
+                    <legend>Perguntas</legend>
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="1">1-Qual o nome da frequesia mais populosa do concelho de Torres Vedras?</label>
+                        <input type="text" id="1" name="1">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <p>2-Qual o nome da/o presidente de Torres Vedras?</p>
+                        <input type="radio" id="a" name="2" value="dois">
+                        <label for="a">Marcelo Rebelo de Sousa</label>
+                        <input type="radio" id="b" name="2" value="dois">
+                        <label for="b">Frederico Varandas</label>
+                        <input type="radio" id="c" name="2" value="dois">
+                        <label for="c">Laura Rodrigues</label>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <p>3-Qual é a praia, do concelho de Torres Vedras, que recebe anualmente o festival de surf Ocean Spirit?</p>
+                        <input type="checkbox" id="aa" name="aa" value="tres">
+                        <label for="aa"> Praia Azul</label>
+                        <input type="checkbox" id="bb" name="bb" value="tres">
+                        <label for="bb"> Praia de Santa Rita</label>
+                        <input type="checkbox" id="cc" name="cc" value="tres">
+                        <label for="bb"> Praia de Santa Cruz</label>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="birthday"><p>4-Qual o dia de fundação do SCUT</p></label>
+                        <input type="date" id="birthday" name="birthday">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="favcolor"><p>5-Qual a principal cor do Torreense?</p></label>
+                        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="quantity"><p>6- Qual o código postal de Torres Vedras?(entre 1 e 4):</p></label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="4">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="vol"><p>7-Qual o número de habitantes do município de Torres Vedras?(entre 0 e 50mil)</p></label>
+                        <input type="range" id="vol" name="vol" min="0" max="50000">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <p>8-Qual a sigla do Torreense?</p>
+                        <button name ="pois" type="submit" value="pois1">SCP</button>
+                        <button name ="pois" type="submit" value="pois2">SLB</button>
+                        <button name ="pois" type="submit" value="pois2">FCP</button>
+                        <button name ="pois" type="submit" value="pois2">SCUT</button>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="concelho"><p>9-Selecione o único concelho que não pertence ao concelho de Torres Vedras</p></label>
+                        <input list="concelhos" name="concelho" id="concelho">
+                        <datalist id="concelhos">
+                          <option value="A-Dos-Cunhados">
+                          <option value="Silveira">
+                          <option value="Matacães">
+                          <option value="Marateca e Poceirão">
+                          <option value="Turcifal">
+                        </datalist>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="11"><p>10-Qual o mail de contacto da Camâra Municipal de Torres Vedras?</p></label>
+                        <input type="email" id="11" name="11b" autocomplete="off">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="12"><p>11-Qual o ano de fundação do município de Torres Vedras?</p></label>
+                        <input type="text" id="12" name="12" maxlength="4" size="4">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="13"><p>12-Número de Vereadores da Câmara Municipal de Torres Vedras(entre 3 e 12)</p></label>
+                        <input type="number" id="13" name="13" min="3" max="12">
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="14"><p>13-Qual o endereço da Câmara de Torres Vedras?</p></label>
+                        <select name="14" id="14" multiple>
+                            <option value="a"> Av. 5 de Outubro, 2560-270 Torres Vedras</option>
+                            <option value="b"> Av. 25 de Abril, 2560-276 Torres Vedras</option>
+                            <option value="c"> Av. 31 de Fevereiro, 2560-270 Torres Vedras</option>
+                            <option value="d">  Av. 25 de Dezembro, 1234-270 Torres Vedras</option>
+                        </select>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="15"><p>14-Qual o partido político da presidente da câmara de Torres Vedras?</p></label>
+                        <input type="text" id="15" name="15" autofocus>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="16"><p>15-A que distrito pertence Torres Vedras?</p></label>
+                        <input type="text" id="16" name="16" required>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <label for="18"><p>16-Qual o gentílico dos habitantes de Torres Vedras?</p></label>
+                        <select name="pois" id="18">
+                            <option value="a">Alfacinhas</option>
+                            <option value="b">Torreenses</option>
+                            <option value="c">Torreiros</option>
+                        </select>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <p>Comentário sobre o quizz</p>
+                        <textarea id="20" name="20" rows="4" cols="50"></textarea>
+                    </form>
+
+                    <form method="POST" action="mailto: joaobernardino56@gmail.com" enctype="multipart/form-data">
+                        <input type="image" src="images/submit.jpg" alt="submit" width="48" height="48">
+                    </form>
+
+                </fieldset>
+            </section>
+            </fieldset>
+
+        </main>
+
+    </body>
+</html>
