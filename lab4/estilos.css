@@ -1,0 +1,149 @@
+* {box-sizing: border-box;}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-color: lightblue;
+    padding: 50px;
+}
+.flex-container > div {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.flex-container img{
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+.flex-container div div:last-child{
+    width: 150px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 20px 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    border-radius: 10px 10px;
+    background-color: lightblue;
+}
+
+.menu a {
+    display: flex;
+    padding: 20px;
+    color: midnightblue;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    display: flex;
+    background-color: darkgrey;
+    border-radius: 10px 10px;
+    font-weight: bold;
+}
+
+.menu a:last-child{
+    margin-left:auto
+}
+
+.conselhos {
+    display: flex;
+    background-color: lightblue;
+}
+
+.conselhos > div{
+    background-color: DodgerBlue;
+    color: white;
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 20px
+}
+.background {
+    background-image: url("images/oceuexistemesmo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.titulo {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.item1{
+    grid-area: header;
+    background-image: url("images/albufeira.jpeg");
+}
+.item2{
+    grid-area: menu;
+    background-image: url("images/douroVinhateiro.jpeg");
+}
+.item3{
+    grid-area: main;
+    background-image: url("images/porto.jpeg");
+
+}
+.item4{
+    grid-area: right;
+    background-image: url("images/lisabona.jpeg");
+}
+.item5{
+    grid-area: footer;
+    background-image: url("images/camping.jpeg");
+}
+.item6{
+    grid-area: pois;
+    background-image: url("images/geres.jpeg");
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr;
+    grid-template-rows: 100px 100px 100px 100px 50px;
+
+    grid-template-areas:
+        'header header right footer'
+        'header header right footer'
+        'menu pois main footer'
+        'menu pois main footer'
+        'menu pois main footer';
+
+    gap: 10px;
+    padding: 10px;
+    background-color: beige;
+}
+
+.grid-container > div {
+  background-color: white;
+  opacity: 80%;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+.titulogrid {
+    color: black;
+    text-align: right;
+}
+
+.paragrafogrid {
+    color: black;
+    text-align: right;
+}
+
+.paragrafogrid::first-line {
+    font-size: 2em;
+}
+
