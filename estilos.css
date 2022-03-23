@@ -1,0 +1,16 @@
+*{background-color: darkgrey}
+
+@media (min-width:601px) {
+
+    body{
+        display: grid;
+        width: auto;
+        height: auto;
+
+        grid-template-rows: max-content;
+        grid-template-columns: max-content;
+
+        grid-template-areas:
+              'header''nav''footer';
+  }
+}
